@@ -6,9 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public  class LoginPageObjects {
-public LoginPageObjects(){
-    PageFactory.initElements(Driver.getDriver(),this);
-}
+
 
     @FindBy(xpath = "(//*[@role='presentation'])[1]")
     public WebElement lLinkedinButton;
@@ -30,4 +28,7 @@ public LoginPageObjects(){
     public WebElement lPasswordBox;
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement lSubmitButton;
+    public LoginPageObjects(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
 }

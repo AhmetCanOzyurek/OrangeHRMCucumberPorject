@@ -12,12 +12,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseSteps {
+    LoginPageObjects loginObjects;
+    MainPageObjects mainObjects;
+
     protected WebDriver driver;
     protected WebDriverWait wait;
 
     protected BaseSteps() {
         driver = Driver.getDriver();
         wait = Driver.getWait();
+        loginObjects = new LoginPageObjects();
+        mainObjects = new MainPageObjects();
     }
 
     public void click(By locator) {

@@ -11,8 +11,6 @@ import io.cucumber.java.en.When;
 import java.util.Map;
 
 public class LoginStepDefs extends BaseSteps{
-    LoginPageObjects loginObjects;
-    MainPageObjects mainObjects;
 
 
     @Given("User on homepage")
@@ -42,5 +40,10 @@ public class LoginStepDefs extends BaseSteps{
     @Then("Login should be succesfull")
     public void loginShouldBeSuccesfull() {
         waitForVisibility(mainObjects.userDropDown);
+    }
+
+    @Then("quit from driver")
+    public void quitFromDriver() {
+        quitFromDriver();
     }
 }
