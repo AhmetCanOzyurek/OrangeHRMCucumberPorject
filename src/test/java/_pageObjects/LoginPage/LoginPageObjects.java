@@ -7,7 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public  class LoginPageObjects {
 
-
+    public LoginPageObjects(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
     @FindBy(xpath = "(//*[@role='presentation'])[1]")
     public WebElement lLinkedinButton;
     @FindBy(xpath = "(//*[@role='presentation'])[2]")
@@ -28,7 +30,7 @@ public  class LoginPageObjects {
     public WebElement lPasswordBox;
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement lSubmitButton;
-    public LoginPageObjects(){
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
+    @FindBy(xpath = "//*[text()='Invalid credentials']")
+    public  WebElement lInvalidCredentialsTxt;
+
 }
