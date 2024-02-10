@@ -12,4 +12,6 @@ public class MainPageObjects {
     }
     @FindBy(css=".oxd-userdropdown-tab")
     public WebElement userDropDown;
+    @FindBy(xpath = "//*[text()='Logout']")
+    public WebElement userDropDownLogout;
 }

@@ -8,5 +8,5 @@ Feature: Login functionality
       | password | admin321 |
     And user clicks login button
     Then login should be failed and invalid  credentials text should be visible
-    Then quit from driver
+
 

@@ -8,4 +8,4 @@ Feature: Login Funcitoanality
       | password | admin123 |
     And user clicks login button
     Then login should be succesfull
-    Then quit from driver
+

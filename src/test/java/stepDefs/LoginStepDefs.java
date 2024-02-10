@@ -43,13 +43,21 @@ public class LoginStepDefs extends BaseSteps{
         waitForVisibility(mainObjects.userDropDown);
     }
 
-    @Then("quit from driver")
-    public void quitFromDriver() {
-        Driver.quitDriver();
-    }
 
     @Then("login should be failed and invalid  credentials text should be visible")
     public void loginShouldBeFailedAndInvalidCredentialsTextShouldBeVisible() {
         waitForVisibility(loginObjects.lInvalidCredentialsTxt);
+    }
+
+
+    @Then("login should be {string}")
+    public void loginShouldBeAs(String str) {
+        if(str.equalsIgnoreCase("true")){
+            waitForVisibility(mainObjects.userDropDown);
+            click(mainObjects.userDropDown);
+            click(mainObjects.userDropDownLogout);
+        }else{
+            waitForVisibility(loginObjects.lInvalidCredentialsTxt);
+        }
     }
 }

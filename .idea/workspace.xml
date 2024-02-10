@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e578b380-525f-4b98-a51e-f103e2858c96" name="Changes" comment="- First Succesfull Login scenario &#10;- Login Page objects added&#10;- Main page object added">
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/FalseLoginRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/LoginWithFalseCred.feature" afterDir="false" />
+    <list default="true" id="e578b380-525f-4b98-a51e-f103e2858c96" name="Changes" comment="- Login with false credentials scenario &#10;- Necessary objects added&#10;- Runners and features names edited">
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/ScenOutlineRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefs/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/LoginWithSceOutline.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/_pageObjects/LoginPage/LoginPageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_pageObjects/LoginPage/LoginPageObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/LoginRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TrueLoginRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/_pageObjects/mainPage/MainPageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_pageObjects/mainPage/MainPageObjects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefs/LoginStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefs/LoginStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LoginWithTrueCred.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LoginWithFalseCred.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LoginWithFalseCred.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LoginWithTrueCred.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LoginWithTrueCred.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.FalseLoginRunner.executor": "Run",
     "TestNG.LoginRunner.executor": "Run",
+    "TestNG.ScenOutlineRunner.executor": "Run",
     "TestNG.dnemee.deneme.executor": "Run",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
@@ -56,7 +58,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.FalseLoginRunner">
+  <component name="RunManager" selected="TestNG.ScenOutlineRunner">
     <configuration name="Scenario: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -87,6 +89,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="runners" />
       <option name="MAIN_CLASS_NAME" value="runners.FalseLoginRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScenOutlineRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRMCucumberPorject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.ScenOutlineRunner" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -131,6 +150,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ScenOutlineRunner" />
         <item itemvalue="TestNG.FalseLoginRunner" />
         <item itemvalue="TestNG.TrueLoginRunner" />
         <item itemvalue="Cucumber Java.Scenario: Login" />
@@ -186,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707235794580</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- Login with false credentials scenario &#10;- Necessary objects added&#10;- Runners and features names edited">
+      <option name="closed" value="true" />
+      <created>1707305733697</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707305733697</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,6 +222,7 @@
     <MESSAGE value="- Browsers Enum Added&#10;- Property files reader added&#10;- Drivers setup complete" />
     <MESSAGE value="- First Login scenario &#10;- Login Page objects added&#10;- Main page object added" />
     <MESSAGE value="- First Succesfull Login scenario &#10;- Login Page objects added&#10;- Main page object added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- First Succesfull Login scenario &#10;- Login Page objects added&#10;- Main page object added" />
+    <MESSAGE value="- Login with false credentials scenario &#10;- Necessary objects added&#10;- Runners and features names edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Login with false credentials scenario &#10;- Necessary objects added&#10;- Runners and features names edited" />
   </component>
 </project>
