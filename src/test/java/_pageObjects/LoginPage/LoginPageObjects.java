@@ -33,4 +33,10 @@ public  class LoginPageObjects {
     @FindBy(xpath = "//*[text()='Invalid credentials']")
     public  WebElement lInvalidCredentialsTxt;
 
+    public static void main(String[] args) {
+        String sayi = "1750";
+        double a = Double.parseDouble(sayi);
+        System.out.println(a);
+    }
+
 }

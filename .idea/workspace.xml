@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e578b380-525f-4b98-a51e-f103e2858c96" name="Changes" comment=" - SocialMedia buttons functionality first step">
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/SocialMediaRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/socialMedia.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/_pageObjects/LoginPage/SocialMedia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefs/LoginStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefs/LoginStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/_pageObjects/LoginPage/LoginPageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_pageObjects/LoginPage/LoginPageObjects.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -54,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LoginPageObjects.executor": "Run",
     "Cucumber Java.Scenario: Login with false credentials.executor": "Run",
     "Cucumber Java.Scenario: Login.executor": "Run",
     "Cucumber Java.Scenario: social media direction.executor": "Run",
@@ -71,7 +73,20 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.FalseLoginRunner">
+  <component name="RunManager" selected="Application.LoginPageObjects">
+    <configuration name="LoginPageObjects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_pageObjects.LoginPage.LoginPageObjects" />
+      <module name="OrangeHRMCucumberPorject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_pageObjects.LoginPage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Login with false credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginWithFalseCred.feature" />
@@ -129,23 +144,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScenOutlineRunner" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OrangeHRMCucumberPorject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.ScenOutlineRunner" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SocialMediaRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRMCucumberPorject" />
       <extension name="coverage">
@@ -165,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoginPageObjects" />
         <item itemvalue="TestNG.FalseLoginRunner" />
         <item itemvalue="Cucumber Java.Scenario: Login with false credentials" />
         <item itemvalue="TestNG.SocialMediaRunner" />
         <item itemvalue="Cucumber Java.Scenario: social media direction" />
-        <item itemvalue="TestNG.ScenOutlineRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707598068954</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=" - SocialMedia buttons functionality first step">
+      <option name="closed" value="true" />
+      <created>1708282623284</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708282623284</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
